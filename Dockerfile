@@ -4,6 +4,6 @@ RUN apt update && apt install python3-pip -y
 
 WORKDIR /app
 
-COPY . .
+COPY requirements.txt .
 
 CMD [ "python3", "./app.py" ]
