@@ -2,6 +2,14 @@
 - hosts: dev
   become: yes
   tasks: 
+    - name: Install docker
+      yum: 
+        name: docker
+        state: present
+    - name: start Docker
+      service:
+        name: docker
+        state: started
     - name: Install python3-pip
       yum: 
         name: python3-pip
