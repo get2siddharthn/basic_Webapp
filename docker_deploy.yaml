@@ -22,4 +22,6 @@
       docker_container:
         name: webapp_py
         image: "sidverse/webapp:{{DOCKER_TAG}}"
-        state: started
+        state: present
+        ports:
+          - 8080:8080
