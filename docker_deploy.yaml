@@ -22,6 +22,8 @@
       docker_container:
         name: webapp_py
         image: "sidverse/webapp:{{DOCKER_TAG}}"
-        state: present
+        state: started
         ports:
           - 5000:5000
+        tty: true
+        detach: true
