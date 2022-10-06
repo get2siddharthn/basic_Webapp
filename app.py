@@ -1,4 +1,3 @@
-from concurrent.futures.process import _threads_wakeups
 from flask import Flask, render_template
 
 app = Flask(__name__)
